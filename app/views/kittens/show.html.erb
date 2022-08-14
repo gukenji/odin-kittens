@@ -1,0 +1,13 @@
+<p style="color: green"><%= notice %></p>
+
+<p><strong>Nome: </strong><%= @kitten.name %></p>
+<p><strong>Idade: </strong><%= @kitten.age %></p>
+<p><strong>Fofura: </strong><%= @kitten.cuteness %></p>
+<p><strong>Maciez do pelo: </strong><%= @kitten.softness %></p>
+
+<div>
+  <%= link_to "Edit this kitten", edit_kitten_path(@kitten) %> |
+  <%= link_to "Back to kittens", kittens_path %>
+
+  <%= button_to "Destroy this kitten", @kitten, method: :delete %>
+</div>
